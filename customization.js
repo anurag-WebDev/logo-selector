@@ -18,7 +18,7 @@ const changeColor = (e) => {
 
   const container = document.getElementById("image-container");
   if (e.target.id === "dodgerblue") {
-    img.src = "./dist/blue.png";
+    img.src = "./images/blue.png";
     img.id = e.target.id;
     container.append(img);
     // console.log(isLogoImage);
@@ -26,14 +26,14 @@ const changeColor = (e) => {
       addLogo();
     }
   } else if (e.target.id === "yellow") {
-    img.src = "./dist/yellow.png";
+    img.src = "./images/yellow.png";
     img.id = e.target.id;
     container.append(img);
     if (isLogoImage) {
       addLogo();
     }
   } else if (e.target.id === "pink") {
-    img.src = "./dist/pink.png";
+    img.src = "./images/pink.png";
     img.id = e.target.id;
     container.append(img);
     if (isLogoImage) {
