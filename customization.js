@@ -6,9 +6,9 @@ const changeColor = (e) => {
   uploadButton.style.background = e.target.id;
   removeButton.style.background = e.target.id;
 
-  let list = document.getElementById("image-container");
-  if (list.children.length > 0) {
-    list.innerHTML = " ";
+  let container = document.getElementById("image-container");
+  if (container.children.length > 0) {
+    container.innerHTML = " ";
   }
   let img = document.createElement("img");
 
@@ -16,7 +16,7 @@ const changeColor = (e) => {
   img.height = "400";
   img.alt = "umbrella-image";
 
-  const container = document.getElementById("image-container");
+  // const container = document.getElementById("image-container");
   if (e.target.id === "dodgerblue") {
     img.src = "./images/blue.png";
     img.id = e.target.id;
