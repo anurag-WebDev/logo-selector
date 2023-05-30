@@ -3,8 +3,13 @@ const changeColor = (e) => {
 
   let uploadButton = document.getElementById("upload-button");
   let removeButton = document.getElementById("remove-button");
-  uploadButton.style.background = e.target.id;
-  removeButton.style.background = e.target.id;
+  if (e.target.id === "yellow") {
+    uploadButton.style.background = "#f8ce45";
+    removeButton.style.background = "#f8ce45";
+  } else {
+    uploadButton.style.background = e.target.id;
+    removeButton.style.background = e.target.id;
+  }
 
   let container = document.getElementById("image-container");
   if (container.children.length > 0) {
@@ -32,7 +37,7 @@ const changeColor = (e) => {
     if (isLogoImage) {
       addLogo();
     }
-  } else if (e.target.id === "pink") {
+  } else if (e.target.id === "deeppink") {
     img.src = "./images/pink.png";
     img.id = e.target.id;
     container.append(img);
