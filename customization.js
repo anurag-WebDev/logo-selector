@@ -63,6 +63,8 @@ const addLogo = () => {
     let buttonText = document.getElementById("upload-button");
     buttonText.style.justifyContent = "center";
     buttonText.style.alignItems = "center";
+    buttonText.style.fontSize = "larger";
+    buttonText.style.color = "white";
     buttonText.innerText = file[0].name;
     let inputFile = document.getElementById("get-file");
     inputFile.style.display = "none";
